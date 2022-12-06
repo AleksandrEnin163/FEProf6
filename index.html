@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="game_body">
+        <h2>Камень, ножницы, бумага</h2>
+        <h3>Выберите ваш предмет</h3>
+        <div class="objects">
+            <input type="image" src="https://images.emojiterra.com/twitter/v13.1/512px/1faa8.png" alt="Камень" class="game_object" name="0">
+            <input type="image" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f9fb.png" alt="Бумага" class="game_object" name="1">
+            <input type="image" src="https://static-00.iconduck.com/assets.00/black-scissors-emoji-401x512-5v17b088.png" alt="Ножницы" class="game_object" name="2">
+        </div>
+        <div id="won" class="popup hide">
+            <div class="popup-content">
+                <img src="https://media.tenor.com/QwyDTN_0AfAAAAAC/the-goon-win.gif" alt="won">
+                <button class="new_game">Играть снова</button>
+            </div>
+        </div>
+        <div id="lost" class="popup hide">
+            <div class="popup-content">
+                <img src="https://i.gifer.com/49f1.gif" alt="lost">
+                <button class="new_game">Играть снова</button>
+            </div>
+        </div>
+        <div id="draw" class="popup hide">
+            <div class="popup-content">
+                <img src="https://media1.giphy.com/media/26ufkv6PUIzb2ZQre/giphy.gif?cid=6c09b9523b8e1bc8e6f09631d02f29bb995588e3972be53e&rid=giphy.gif" alt="draw">
+                <button class="new_game">Играть снова</button>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
